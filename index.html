@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Shekh Asif</h1>
+      <p class="subtitle">Aspiring Developer</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Welcome to my professional student portfolio. I'm passionate about technology and love turning ideas into reality.</p>
+      <!-- Add more details about yourself -->
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>[Degree]</strong> in [Your Major], <br>[University], Graduated [Year]</p>
+      <!-- Add more details about your education -->
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5, CSS3, JavaScript</li>
+        <li>React, Node.js</li>
+        <li>Responsive Design</li>
+        <li>Git, GitHub</li>
+        <!-- Add more skills as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project" onclick="showProjectDetails('Project Title 1', 'Description of the project. Include technologies used, your role, and outcomes.')">
+        <h3>Project Title 1</h3>
+        <p>Description of the project. Include technologies used, your role, and outcomes.</p>
+      </div>
+      <div class="project" onclick="showProjectDetails('Project Title 2', 'Description of the project. Include technologies used, your role, and outcomes.')">
+        <h3>Project Title 2</h3>
+        <p>Description of the project. Include technologies used, your role, and outcomes.</p>
+      </div>
+      <!-- Add more project entries as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Contact: your@email.com | LinkedIn: linkedin.com/in/yourprofile | GitHub: github.com/yourusername</p>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div id="projectDetailsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeProjectDetailsModal">&times;</span>
+      <h2 id="projectDetailsTitle"></h2>
+      <p id="projectDetailsDescription"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
